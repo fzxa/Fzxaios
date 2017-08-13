@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135B90F163B0282D3AD03E89 /* libPods-Fzxaios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 407167C1A7481E13C2C6F374 /* libPods-Fzxaios.a */; };
 		7A752FD31F40C30000986AA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A752FD21F40C30000986AA0 /* main.m */; };
 		7A752FD61F40C30000986AA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A752FD51F40C30000986AA0 /* AppDelegate.m */; };
 		7A752FD91F40C30000986AA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A752FD81F40C30000986AA0 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36268CE0B405E81877FAD754 /* Pods-Fzxaios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fzxaios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fzxaios/Pods-Fzxaios.release.xcconfig"; sourceTree = "<group>"; };
+		407167C1A7481E13C2C6F374 /* libPods-Fzxaios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fzxaios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A752FCE1F40C30000986AA0 /* Fzxaios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fzxaios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A752FD21F40C30000986AA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A752FD41F40C30000986AA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		7A752FF21F40C30000986AA0 /* FzxaiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FzxaiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A752FF61F40C30000986AA0 /* FzxaiosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FzxaiosUITests.m; sourceTree = "<group>"; };
 		7A752FF81F40C30000986AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8C7DDC202352518D791801 /* Pods-Fzxaios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fzxaios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fzxaios/Pods-Fzxaios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135B90F163B0282D3AD03E89 /* libPods-Fzxaios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DDDFFBD65E7EF732D8E5B74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE8C7DDC202352518D791801 /* Pods-Fzxaios.debug.xcconfig */,
+				36268CE0B405E81877FAD754 /* Pods-Fzxaios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7A752FC51F40C30000986AA0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				7A752FEA1F40C30000986AA0 /* FzxaiosTests */,
 				7A752FF51F40C30000986AA0 /* FzxaiosUITests */,
 				7A752FCF1F40C30000986AA0 /* Products */,
+				2DDDFFBD65E7EF732D8E5B74 /* Pods */,
+				A96E8A658EEF51B6E75F8B19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +204,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A96E8A658EEF51B6E75F8B19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				407167C1A7481E13C2C6F374 /* libPods-Fzxaios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A752FFB1F40C30000986AA0 /* Build configuration list for PBXNativeTarget "Fzxaios" */;
 			buildPhases = (
+				19DC99EC4D74C316F47AB8E1 /* [CP] Check Pods Manifest.lock */,
 				7A752FCA1F40C30000986AA0 /* Sources */,
 				7A752FCB1F40C30000986AA0 /* Frameworks */,
 				7A752FCC1F40C30000986AA0 /* Resources */,
+				A6F2DFB6F975E26DF23FCF05 /* [CP] Embed Pods Frameworks */,
+				D025467B04E06DB8C497DC07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,6 +345,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19DC99EC4D74C316F47AB8E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fzxaios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F2DFB6F975E26DF23FCF05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fzxaios/Pods-Fzxaios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D025467B04E06DB8C497DC07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fzxaios/Pods-Fzxaios-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fzxaios/Pods-Fzxaios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A752FCA1F40C30000986AA0 /* Sources */ = {
@@ -473,6 +555,7 @@
 		};
 		7A752FFC1F40C30000986AA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8C7DDC202352518D791801 /* Pods-Fzxaios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 439Y8Q8LW8;
@@ -485,6 +568,7 @@
 		};
 		7A752FFD1F40C30000986AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36268CE0B405E81877FAD754 /* Pods-Fzxaios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 439Y8Q8LW8;
