@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CYLTabBarController.h>
 
 @interface AppDelegate ()
 
@@ -17,8 +18,57 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CYLTabBarController *tabVC = [[CYLTabBarController alloc]init];
+    
+    tabVC.tabBarItemsAttributes = [self createTabBarItemsAttributes];
+    tabVC.viewControllers = [self createTabBarViewControllers];
+    
+    [self.window makeKeyAndVisible];
+    [self customizeInterface];
+    [self.window setRootViewController:tabVC];
+    
     return YES;
 }
+
+
+-(NSArray *) createTabBarViewControllers
+{
+    UIViewController *homeVC = [[UIViewController alloc]init];
+    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
+    
+    return @[homeNav];
+}
+
+-(NSArray *) createTabBarItemsAttributes
+{
+    
+    NSDictionary *dict1 = @{
+                            CYLTabBarItemTitle : @"首页"
+                        
+                            };
+    return @[dict1];
+}
+
+- (void)customizeInterface {
+    
+    // 普通状态下的文字属性
+    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
+    normalAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    
+    // 选中状态下的文字属性
+    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    
+    // 设置文字属性
+    UITabBarItem *tabBar = [UITabBarItem appearance];
+    [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+    
+    //UITabBar *tabBarAppearance = [UITabBar appearance];
+    //[tabBarAppearance setBackgroundImage:[UIImage imageNamed:@"tabbar_background"]];
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

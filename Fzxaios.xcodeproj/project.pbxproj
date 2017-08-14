@@ -95,7 +95,7 @@
 		7A752FC51F40C30000986AA0 = {
 			isa = PBXGroup;
 			children = (
-				7A7530071F40C4DF00986AA0 /* New Group */,
+				7A752FD01F40C30000986AA0 /* Fzxaios */,
 				7A752FEA1F40C30000986AA0 /* FzxaiosTests */,
 				7A752FF51F40C30000986AA0 /* FzxaiosUITests */,
 				7A752FCF1F40C30000986AA0 /* Products */,
@@ -155,14 +155,6 @@
 				7A752FF81F40C30000986AA0 /* Info.plist */,
 			);
 			path = FzxaiosUITests;
-			sourceTree = "<group>";
-		};
-		7A7530071F40C4DF00986AA0 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				7A752FD01F40C30000986AA0 /* Fzxaios */,
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		7A7530091F40C53100986AA0 /* Classes */ = {
