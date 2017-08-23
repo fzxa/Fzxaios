@@ -37,17 +37,43 @@
     UIViewController *homeVC = [[UIViewController alloc]init];
     UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
     
-    return @[homeNav];
+    UIViewController *categoryVC = [[UIViewController alloc]init];
+    UINavigationController *categoryNav = [[UINavigationController alloc]initWithRootViewController:categoryVC];
+    
+    UIViewController *leanVc = [[UIViewController alloc]init];
+    UINavigationController *leanNav = [[UINavigationController alloc]initWithRootViewController:leanVc];
+    
+    UIViewController *profileVC = [[UIViewController alloc]init];
+    UINavigationController *profileNav = [[UINavigationController alloc]initWithRootViewController:profileVC];
+
+    
+    return @[homeNav,categoryNav,leanNav,profileNav];
 }
 
 -(NSArray *) createTabBarItemsAttributes
 {
     
     NSDictionary *dict1 = @{
-                            CYLTabBarItemTitle : @"首页"
-                        
+                            CYLTabBarItemTitle : @"首页",
+                            CYLTabBarItemImage:@"tabbar_home",
+                            CYLTabBarItemSelectedImage:@"tabbar_home_selected"
                             };
-    return @[dict1];
+    NSDictionary *dict2 = @{
+                            CYLTabBarItemTitle : @"分类",
+                            CYLTabBarItemImage : @"tabbar_group",
+                            CYLTabBarItemSelectedImage : @"tabbar_group_selected"
+                            };
+    NSDictionary *dict3 = @{
+                            CYLTabBarItemTitle : @"我的学习",
+                            CYLTabBarItemImage : @"tabbar_lean",
+                            CYLTabBarItemSelectedImage : @"tabbar_lean_selected"
+                            };
+    NSDictionary *dict4 = @{
+                            CYLTabBarItemTitle : @"账号",
+                            CYLTabBarItemImage: @"tabbar_profile",
+                            CYLTabBarItemSelectedImage:@"tabbar_profile_selected"
+                            };
+    return @[dict1,dict2,dict3,dict4];
 }
 
 - (void)customizeInterface {
@@ -58,7 +84,7 @@
     
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:0 green:165 blue:119 alpha:1];
     
     // 设置文字属性
     UITabBarItem *tabBar = [UITabBarItem appearance];
