@@ -9,8 +9,10 @@
 #import "AppDelegate.h"
 #import <CYLTabBarController.h>
 
-@interface AppDelegate ()
+#import "HomeViewController.h"
 
+@interface AppDelegate ()
+#define RGB_COLOR(R, G, B) [UIColor colorWithRed:((R) / 255.0f) green:((G) / 255.0f) blue:((B) / 255.0f) alpha:1.0f]
 @end
 
 @implementation AppDelegate
@@ -34,7 +36,7 @@
 
 -(NSArray *) createTabBarViewControllers
 {
-    UIViewController *homeVC = [[UIViewController alloc]init];
+    UIViewController *homeVC = [[HomeViewController alloc]init];
     UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
     
     UIViewController *categoryVC = [[UIViewController alloc]init];
@@ -84,7 +86,7 @@
     
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:0 green:165 blue:119 alpha:1];
+    selectedAttrs[NSForegroundColorAttributeName] = RGB_COLOR(0, 165, 119);
     
     // 设置文字属性
     UITabBarItem *tabBar = [UITabBarItem appearance];

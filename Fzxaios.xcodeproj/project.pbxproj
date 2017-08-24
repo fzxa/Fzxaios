@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		135B90F163B0282D3AD03E89 /* libPods-Fzxaios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 407167C1A7481E13C2C6F374 /* libPods-Fzxaios.a */; };
+		7A1939FA1F4F385400A8D08B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1939F91F4F385400A8D08B /* HomeViewController.m */; };
 		7A752FD31F40C30000986AA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A752FD21F40C30000986AA0 /* main.m */; };
 		7A752FD61F40C30000986AA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A752FD51F40C30000986AA0 /* AppDelegate.m */; };
 		7A752FD91F40C30000986AA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A752FD81F40C30000986AA0 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		36268CE0B405E81877FAD754 /* Pods-Fzxaios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fzxaios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fzxaios/Pods-Fzxaios.release.xcconfig"; sourceTree = "<group>"; };
 		407167C1A7481E13C2C6F374 /* libPods-Fzxaios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fzxaios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1939F81F4F385400A8D08B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7A1939F91F4F385400A8D08B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		7A752FCE1F40C30000986AA0 /* Fzxaios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fzxaios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A752FD21F40C30000986AA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A752FD41F40C30000986AA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 		7A7530111F40C5A600986AA0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7A1939F81F4F385400A8D08B /* HomeViewController.h */,
+				7A1939F91F4F385400A8D08B /* HomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				7A752FD91F40C30000986AA0 /* ViewController.m in Sources */,
 				7A752FD61F40C30000986AA0 /* AppDelegate.m in Sources */,
 				7A752FD31F40C30000986AA0 /* main.m in Sources */,
+				7A1939FA1F4F385400A8D08B /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
